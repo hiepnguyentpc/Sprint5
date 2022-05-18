@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, Image, View } from 'react-native';
 import ImageSlideShow from './Image Slide Show Component/ImageSlideShow';
 import Information from './Information Component/Information';
+import RowIcon from './Row Icon/RowIcon';
 
 
 export default function App() {
@@ -10,6 +11,8 @@ export default function App() {
       <Information/>
 
       <ImageSlideShow/>
+
+      <RowIcon/>
       
 
     </View>
