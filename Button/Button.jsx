@@ -1,33 +1,21 @@
 import React from "react";
-import {
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  View,
-  Text,
-  TouchableOpacity,
-} from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import Ionicons from "react-native-vector-icons/Ionicons";
 const onPress = () => {};
 const Button = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <View style={styles.container}>
-          <TouchableOpacity onPress={onPress} style={styles.button}>
-            <Text style={styles.buttonText}>Click Me</Text>
-          </TouchableOpacity>
+    <TouchableOpacity onPress={onPress} style={styles.button}>
+      <View style={{ flexDirection: "row" }}>
+        <View style={{left: -5, top: -1}}>
+          <Ionicons name="power" size="20"/>
         </View>
-      </SafeAreaView>
-    </>
+        <Text style={styles.buttonText}>Đăng xuất</Text>
+      </View>
+    </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    alignItems: "center",
-    justifyContent: "center",
-  },
   textInput: {
     width: "90%",
     height: 50,
@@ -38,9 +26,13 @@ const styles = StyleSheet.create({
     backgroundColor: "gray",
     padding: 20,
     borderRadius: 10,
+    width: 132,
+    height: 60,
   },
   buttonText: {
     color: "white",
+    fontWeight: "bold",
+    fontSize: "16",
   },
 });
 
