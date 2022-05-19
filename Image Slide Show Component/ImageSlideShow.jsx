@@ -4,7 +4,7 @@ import styles from "./styles";
 
 const ImageSlideShow = () => {
   return (
-    <View>
+    <View style={{height:200}}>
       <Slideshow
         dataSource={[
           {
@@ -22,16 +22,13 @@ const ImageSlideShow = () => {
       <Text style={styles.titleView}>
         Đoàn khối các cơ quan Trung ương ra quân Chiến dịch thanh niên…
       </Text>
-    
-        <View style={styles.textView}>
-            <View style={styles.buttonView}>
-                <Text style={styles.buttonDescription}>Thái Bình</Text>
-            </View>
-            <Text style={styles.dateDescription}>05-06-2019</Text>
+
+      <View style={styles.textView}>
+        <View style={styles.buttonView}>
+          <Text style={styles.buttonDescription}>Thái Bình</Text>
         </View>
-
-
-
+        <Text style={styles.dateDescription}>05-06-2019</Text>
+      </View>
     </View>
   );
 };

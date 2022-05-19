@@ -1,10 +1,11 @@
 import { View, Text, Image } from "react-native";
 import styles from "./styles";
 
-const RowIcon = () => {
+const RowIcon1 = () => {
   return (
-    <View style={{ flexDirection: "row" }}>
-      <View style={{ flexDirection: "column", justifyContent: "space-around", alignItems:"center", }}>
+    <View style={{ flexDirection: "row", marginBottom: 40, top:-60}}>
+
+      <View style={{ flexDirection: "column", alignItems:"center", left:-50 }}>
         <Image
           style={{ height: 60, width: 60 }}
           source={{
@@ -14,7 +15,7 @@ const RowIcon = () => {
         <Text style={styles.textIcon}>Thông tin{'\n'}chung</Text>
       </View>
 
-      <View style={{ flexDirection: "column", justifyContent: "center", alignItems:"center" }}>
+      <View style={{ flexDirection: "column", alignItems:"center" }}>
         <Image
           style={{ height: 60, width: 60 }}
           source={{
@@ -24,7 +25,7 @@ const RowIcon = () => {
         <Text style={styles.textIcon}>Tin tức {'\n'} sự kiện</Text>
       </View>
 
-      <View style={{ flexDirection: "column", justifyContent: "center", alignItems:"center" }}>
+      <View style={{ flexDirection: "column", alignItems:"center", right: -60 }}>
         <Image
           style={{ height: 60, width: 60 }}
           source={{
@@ -33,15 +34,8 @@ const RowIcon = () => {
         ></Image>
         <Text style={styles.textIcon}>Lịch {'\n'} công tác </Text>
       </View>
-
-
-
-
-
-
-
     </View>
   );
 };
 
-export default RowIcon;
+export default RowIcon1;
