@@ -19,17 +19,24 @@ export default function App() {
       <ImageSlideShow />
 
       <ImageBackground source={image} resizeMode="contain" style={styles.image}>
+      <View style={styles.overlay}>
       <ScrollView style={{width:430 }}>
           <View style={styles.buttonContainer}>
             <RowIcon1 />
             <RowIcon2 />
             <RowIcon3 />
             <RowIcon4 />
-            <View style={{ right: 100 }}>
+            <View style={{ right: 100, marginBottom:100 }}>
               <Button />
             </View>
           </View>
         </ScrollView>
+
+
+      </View>
+      
+      
+
       </ImageBackground>
     </View>
   );
@@ -41,6 +48,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
+  },
+  overlay:{
+    backgroundColor:'rgba(255,255,255,0.8)',
+
   },
   image: {
     flex: 1,
