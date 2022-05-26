@@ -17,9 +17,10 @@ export default function App() {
     <View style={styles.container}>
       <Information />
       <ImageSlideShow />
-      <ImageBackground source={image} resizeMode="cover" style={styles.image}>
-        <ScrollView style={{width:430 }}>
-          <View style={styles.container}>
+
+      <ImageBackground source={image} resizeMode="contain" style={styles.image}>
+      <ScrollView style={{width:430 }}>
+          <View style={styles.buttonContainer}>
             <RowIcon1 />
             <RowIcon2 />
             <RowIcon3 />
@@ -38,8 +39,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    alignItems:"center",
-    width:"100%",
+    alignItems: "center",
+    width: "100%",
   },
   image: {
     flex: 1,
@@ -52,5 +53,11 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     backgroundColor: "#000000c0",
+  },
+  buttonContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    marginTop: 90,
   },
 });
