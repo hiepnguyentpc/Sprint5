@@ -1,7 +1,7 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import styles from "./styles";
 
-const RowIcon1 = () => {
+const RowIcon1 = ({parentToChild}) => {
   return (
     <View style={{ flexDirection: "row", marginBottom: 40, top: -60 }}>
       <View
@@ -17,7 +17,7 @@ const RowIcon1 = () => {
       </View>
 
       <View style={{ flexDirection: "column", alignItems: "center" }}>
-        <TouchableOpacity onPress={() => console.log("tin tuc su kien")}>
+        <TouchableOpacity onPress={() => parentToChild()}>
           <Image
             style={{ height: 60, width: 60 }}
             source={{

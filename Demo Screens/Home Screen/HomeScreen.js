@@ -17,6 +17,12 @@ const HomeScreen = ({navigation}) => {
     navigation.navigate('Profile');
   }
 
+  const newPressed = () => {
+    navigation.navigate('News');
+  }
+
+  
+
   return (
     <View style={styles.container}>
       <Information />
@@ -26,7 +32,7 @@ const HomeScreen = ({navigation}) => {
         <View style={styles.overlay}>
           <ScrollView style={{ width: 430 }}>
             <View style={styles.buttonContainer}>
-              <RowIcon1 />
+              <RowIcon1 parentToChild={newPressed}/>
               <RowIcon2 parentToChild={profilePressed}/>
               <RowIcon3 />
               <RowIcon4 />
