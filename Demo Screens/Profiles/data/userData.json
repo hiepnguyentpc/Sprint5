@@ -1,0 +1,32 @@
+[
+    {
+        "name": "NGUYỄN HUY TRUNG",
+        "birthdate": " 15-02-1967",
+        "email_address": " huytrung2290@gmail.com",
+        "phone": " 0123456789",
+        "hometown": " Thái Bình",
+        "address": " Thành phố Thái Bình",
+        "image": "https://user-images.githubusercontent.com/43158356/168463427-780fdf7d-8559-4fb4-a15c-c0ff7f5647af.png"
+    },
+        
+    {
+        "name": "PHÙNG HOÀI NAM",
+        "birthdate": " 18-01-1979",
+        "email_address": " hoainam123@gmail.com",
+        "phone": " 0123456789",
+        "hometown": " Thái Bình",
+        "address": " Kiến Xương - Thái Bình",
+        "image": "https://user-images.githubusercontent.com/43158356/168463430-7fb694b6-1d66-457a-831d-667499d9f1d8.png"
+    },
+
+    {
+        "name": "ĐỖ THỊ HÀ THANH",
+        "birthdate": " 16-01-1973",
+        "email_address": " hathanh1973@gmail.com",
+        "phone": " 0123456789",
+        "hometown": " Thái Bình",
+        "address": " Thành phố Thái Bình",
+        "image": "https://user-images.githubusercontent.com/43158356/168463433-2370cc1c-05a7-434f-bc7c-b7b318d5faea.png"
+    }
+
+]

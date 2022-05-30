@@ -6,8 +6,8 @@ const Button = () => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.button}>
       <View style={{ flexDirection: "row" }}>
-        <View style={{left: -5, top: -1}}>
-          <Ionicons name="power" size="20"/>
+        <View style={{ left: -5, top: -1 }}>
+          <Ionicons name="power" size="20" />
         </View>
         <Text style={styles.buttonText}>Đăng xuất</Text>
       </View>

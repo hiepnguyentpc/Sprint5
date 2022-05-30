@@ -4,7 +4,7 @@ import styles from "./styles";
 
 const ImageSlideShow = () => {
   return (
-    <View style={{height:200}}>
+    <View style={{ height: 200 }}>
       <Slideshow
         dataSource={[
           {
