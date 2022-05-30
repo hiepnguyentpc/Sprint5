@@ -21,6 +21,9 @@ const HomeScreen = ({navigation}) => {
     navigation.navigate('News');
   }
 
+  const questionPressed = () => {
+    navigation.navigate('Questions')
+  }
   
 
   return (
@@ -34,7 +37,7 @@ const HomeScreen = ({navigation}) => {
             <View style={styles.buttonContainer}>
               <RowIcon1 parentToChild={newPressed}/>
               <RowIcon2 parentToChild={profilePressed}/>
-              <RowIcon3 />
+              <RowIcon3 parentToChild={questionPressed}/>
               <RowIcon4 />
               <View style={{ right: 100, marginBottom: 100 }}>
                 <Button />
